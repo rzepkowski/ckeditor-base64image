@@ -1,0 +1,1 @@
+# ckeditor-base64image
