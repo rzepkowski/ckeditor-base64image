@@ -114,7 +114,7 @@ Based on 2 existing CKEditor plugins merged together and enhanced with additionn
 
     reader.onload = function (evt) {
       const imgBase64 = evt.target.result;
-      if (editor.plugins.base64image.isMaxImgSizeOverflow(editor, src)) {
+      if (editor.plugins.base64image.isMaxImgSizeOverflow(editor, imgBase64)) {
         return false;
       }
       var element = editor.document.createElement('img', {
